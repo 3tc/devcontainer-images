@@ -4,7 +4,7 @@
 
 **Source release/branch:** [main](https://github.com/devcontainers/images/tree/main/src/anaconda)
 
-**Digest:** sha256:f7b33c450808afe9995024f46934152dc6b85b4033fce743d7d192e6d21f2985
+**Digest:** sha256:3373020abea39e5bbd68a911c62e7857d171065a0397e8b38be86cbca547ad08
 
 **Tags:**
 ```
@@ -31,7 +31,7 @@ mcr.microsoft.com/devcontainers/anaconda:dev-3
 
 | Tool | Commit | Path |
 |------|--------|------|
-| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 2bc42d223cfe3e21aef06648fb971bd9fb00828e | /home/vscode/.oh-my-zsh |
+| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 9233ef75f28423d147a2f9f64a45a77b1886ee5d | /home/vscode/.oh-my-zsh |
 
 **Pip / pipx installed tools and packages**
 
@@ -39,15 +39,21 @@ mcr.microsoft.com/devcontainers/anaconda:dev-3
 |----------------|---------|
 | joblib | 1.2.0 |
 | cookiecutter | 2.1.1 |
-| cryptography | 39.0.0 |
-| mistune | 2.0.4 |
-| numpy | 1.24.1 |
+| cryptography | 40.0.2 |
+| mistune | 2.0.5 |
+| numpy | 1.24.3 |
 | certifi | 2022.12.7 |
+| setuptools | 67.7.2 |
+| future | 0.18.3 |
+| wheel | 0.40.0 |
+| nbconvert | 7.3.1 |
+| py | 1.11.0 |
 
 **Other tools and utilities**
 
 | Tool | Version | Path |
 |------|---------|------|
+| [git](https://github.com/git/git) | 2.40.1 | 
 | [conda](https://github.com/conda/conda) | 22.9.0 | /opt/conda |
 | anaconda | 2022.10 | /opt/conda |
 
@@ -58,9 +64,9 @@ mcr.microsoft.com/devcontainers/anaconda:dev-3
 | apt-transport-https | 2.2.4 |
 | apt-utils | 2.2.4 |
 | ca-certificates | 20210119 |
-| curl | 7.74.0-1.3+deb11u3 |
+| curl | 7.74.0-1.3+deb11u7 |
 | dialog | 1.3-20201126-1 |
-| git | 1:2.30.2-1 |
+| git | 1:2.30.2-1+deb11u2 |
 | gnupg2 | 2.2.27-2+deb11u2 |
 | htop | 3.0.5-7 |
 | iproute2 | 5.10.0-4 |
@@ -71,7 +77,7 @@ mcr.microsoft.com/devcontainers/anaconda:dev-3
 | libicu67 | 67.1-7 |
 | libkrb5-3 | 1.18.3-6+deb11u3 |
 | liblttng-ust0 | 2.12.1-1 |
-| libssl1.1 | 1.1.1n-0+deb11u3 |
+| libssl1.1 | 1.1.1n-0+deb11u4 |
 | libstdc++6 | 10.2.1-6 |
 | locales | 2.31-13+deb11u5 |
 | lsb-release | 11.1.0 |
@@ -87,7 +93,7 @@ mcr.microsoft.com/devcontainers/anaconda:dev-3
 | psmisc | 23.4-2 |
 | rsync | 3.2.3-4+deb11u1 |
 | strace | 5.10-1 |
-| sudo | 1.9.5p2-3 |
+| sudo | 1.9.5p2-3+deb11u1 |
 | unzip | 6.0-26+deb11u1 |
 | vim-tiny | 2:8.2.2434-3+deb11u1 |
 | wget | 1.21-1+deb11u1 |

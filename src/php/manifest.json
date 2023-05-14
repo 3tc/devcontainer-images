@@ -1,5 +1,5 @@
 {
-	"version": "0.203.16",
+	"version": "0.203.24",
 	"variants": [
 		"8.2-apache-bullseye",
 		"8.1-apache-bullseye",
@@ -80,6 +80,7 @@
 			"nvm": "/usr/local/share/nvm"
 		},
 		"other": {
+			"git": {},
 			"Xdebug": {
 				"path": "/usr/local/lib/php/extensions"
 			},

@@ -10,7 +10,7 @@
 
 ## Variant: buster
 
-**Digest:** sha256:238dfa1eb54b52288e0c425b6d78972a7bce2fda097a139961e7d5308d58c38f
+**Digest:** sha256:6f428638a9f080c3fabf352120f789eee00679ecc007974360921fb08beac9a1
 
 **Tags:**
 ```
@@ -31,7 +31,13 @@ mcr.microsoft.com/devcontainers/base:dev-debian10
 
 | Tool | Commit | Path |
 |------|--------|------|
-| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 4181e8a2cc936bc7b7a89d674bf261023159ed35 | /home/vscode/.oh-my-zsh |
+| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 5d3e86e2a48adf7a308773f8f1b725d187c7c5ef | /home/vscode/.oh-my-zsh |
+
+**Other tools and utilities**
+
+| Tool | Version | Path |
+|------|---------|------|
+| [git](https://github.com/git/git) | 2.40.1 | 
 
 **Additional linux tools and packages**
 
@@ -40,9 +46,9 @@ mcr.microsoft.com/devcontainers/base:dev-debian10
 | apt-transport-https | 1.8.2.3 |
 | apt-utils | 1.8.2.3 |
 | ca-certificates | 20200601~deb10u2 |
-| curl | 7.64.0-4+deb10u3 |
+| curl | 7.64.0-4+deb10u6 |
 | dialog | 1.3-20190211-1 |
-| git | 1:2.20.1-2+deb10u6 |
+| git | 1:2.20.1-2+deb10u8 |
 | gnupg2 | 2.2.12-1+deb10u2 |
 | htop | 2.2.0-1+b1 |
 | iproute2 | 4.20.0-2+deb10u1 |
@@ -54,7 +60,7 @@ mcr.microsoft.com/devcontainers/base:dev-debian10
 | libicu63 | 63.1-6+deb10u3 |
 | libkrb5-3 | 1.17-3+deb10u5 |
 | liblttng-ust0 | 2.10.3-1 |
-| libssl1.1 | 1.1.1n-0+deb10u3 |
+| libssl1.1 | 1.1.1n-0+deb10u4 |
 | libstdc++6 | 8.3.0-6 |
 | locales | 2.28-10+deb10u2 |
 | lsb-release | 10.2019051400 |
@@ -70,7 +76,7 @@ mcr.microsoft.com/devcontainers/base:dev-debian10
 | psmisc | 23.2-1+deb10u1 |
 | rsync | 3.1.3-6 |
 | strace | 4.26-0.2 |
-| sudo | 1.8.27-1+deb10u4 |
+| sudo | 1.8.27-1+deb10u5 |
 | unzip | 6.0-23+deb10u3 |
 | vim-tiny | 2:8.1.0875-5+deb10u4 |
 | wget | 1.20.1-1.1 |
@@ -80,7 +86,7 @@ mcr.microsoft.com/devcontainers/base:dev-debian10
 
 ## Variant: bullseye
 
-**Digest:** sha256:8803bbcac9480ed899569b3559a3bf1aec519e4f14a53b29b982654c7c05eb09
+**Digest:** sha256:53d98efbdd96513f4b647ad39b6b205265523015f6ab96701de03bee876e3945
 
 **Tags:**
 ```
@@ -103,7 +109,13 @@ mcr.microsoft.com/devcontainers/base:dev
 
 | Tool | Commit | Path |
 |------|--------|------|
-| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 4181e8a2cc936bc7b7a89d674bf261023159ed35 | /home/vscode/.oh-my-zsh |
+| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 5d3e86e2a48adf7a308773f8f1b725d187c7c5ef | /home/vscode/.oh-my-zsh |
+
+**Other tools and utilities**
+
+| Tool | Version | Path |
+|------|---------|------|
+| [git](https://github.com/git/git) | 2.40.1 | 
 
 **Additional linux tools and packages**
 
@@ -112,9 +124,9 @@ mcr.microsoft.com/devcontainers/base:dev
 | apt-transport-https | 2.2.4 |
 | apt-utils | 2.2.4 |
 | ca-certificates | 20210119 |
-| curl | 7.74.0-1.3+deb11u3 |
+| curl | 7.74.0-1.3+deb11u7 |
 | dialog | 1.3-20201126-1 |
-| git | 1:2.30.2-1 |
+| git | 1:2.30.2-1+deb11u2 |
 | gnupg2 | 2.2.27-2+deb11u2 |
 | htop | 3.0.5-7 |
 | iproute2 | 5.10.0-4 |
@@ -125,7 +137,7 @@ mcr.microsoft.com/devcontainers/base:dev
 | libicu67 | 67.1-7 |
 | libkrb5-3 | 1.18.3-6+deb11u3 |
 | liblttng-ust0 | 2.12.1-1 |
-| libssl1.1 | 1.1.1n-0+deb11u3 |
+| libssl1.1 | 1.1.1n-0+deb11u4 |
 | libstdc++6 | 10.2.1-6 |
 | locales | 2.31-13+deb11u5 |
 | lsb-release | 11.1.0 |
@@ -141,7 +153,7 @@ mcr.microsoft.com/devcontainers/base:dev
 | psmisc | 23.4-2 |
 | rsync | 3.2.3-4+deb11u1 |
 | strace | 5.10-1 |
-| sudo | 1.9.5p2-3 |
+| sudo | 1.9.5p2-3+deb11u1 |
 | unzip | 6.0-26+deb11u1 |
 | vim-tiny | 2:8.2.2434-3+deb11u1 |
 | wget | 1.21-1+deb11u1 |

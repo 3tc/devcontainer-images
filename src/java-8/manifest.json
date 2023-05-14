@@ -1,5 +1,5 @@
 {
-	"version": "1.0.11",
+	"version": "1.0.17",
 	"variants": [
 		"bullseye",
 		"buster"
@@ -44,6 +44,7 @@
 			"nvm": "/usr/local/share/nvm"
 		},
 		"other": {
+			"git": {},
 			"SDKMAN!": null,
 			"Eclipse Temurin": {
 				"markdownIgnore": true,

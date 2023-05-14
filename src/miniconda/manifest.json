@@ -1,5 +1,5 @@
 {
-	"version": "0.202.15",
+	"version": "0.202.22",
 	"build": {
 		"latest": true,
 		"rootDistro": "debian",
@@ -38,9 +38,13 @@
 		],
 		"pip": [
 			"certifi",
-			"cryptography"
+			"cryptography",
+			"pyOpenssl",
+			"setuptools",
+			"wheel"
 		],
 		"other": {
+			"git": {},
 			"conda": {
 				"cgIgnore": true,
 				"path": "/opt/conda"

@@ -10,7 +10,7 @@
 
 ## Variant: bullseye
 
-**Digest:** sha256:066acc7d2f9c42efa68170ccef1b1cb1500d85b80b93b54375b8903a6a9a4913
+**Digest:** sha256:e07804f303cf8040965a0e555e5a98296ab3de57098269b8b0b128bf49b1ee32
 
 **Tags:**
 ```
@@ -30,20 +30,20 @@ mcr.microsoft.com/devcontainers/java:dev-8-jdk-bullseye
 
 | Language / runtime | Version | Path |
 |--------------------|---------|------|
-| [Java](https://adoptopenjdk.net/) | 1.8.0_352<br />bash: line 1: /usr/local/openjdk-*/bin/java: No such file or directory | /usr/local/sdkman/candidates/java/current<br />/usr/local |
+| [Java](https://adoptopenjdk.net/) | 1.8.0_372<br />bash: line 1: /usr/local/openjdk-*/bin/java: No such file or directory | /usr/local/sdkman/candidates/java/current<br />/usr/local |
 
 **Tools installed using git**
 
 | Tool | Commit | Path |
 |------|--------|------|
-| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 2bc42d223cfe3e21aef06648fb971bd9fb00828e | /home/vscode/.oh-my-zsh |
+| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 5d3e86e2a48adf7a308773f8f1b725d187c7c5ef | /home/vscode/.oh-my-zsh |
 | [nvm](https://github.com/nvm-sh/nvm.git) | 0ccd099bff8e384043883c4ae01b589794b13d72 | /usr/local/share/nvm |
 
 **Other tools and utilities**
 
 | Tool | Version | Path |
 |------|---------|------|
-| [SDKMAN!](https://github.com/sdkman/sdkman-cli) | 5.16.0 | /usr/local/sdkman |
+| [git](https://github.com/git/git) | 2.40.1 | 
 
 **Additional linux tools and packages**
 
@@ -52,9 +52,9 @@ mcr.microsoft.com/devcontainers/java:dev-8-jdk-bullseye
 | apt-transport-https | 2.2.4 |
 | apt-utils | 2.2.4 |
 | ca-certificates | 20210119 |
-| curl | 7.74.0-1.3+deb11u3 |
+| curl | 7.74.0-1.3+deb11u7 |
 | dialog | 1.3-20201126-1 |
-| git | 1:2.30.2-1 |
+| git | 1:2.30.2-1+deb11u2 |
 | gnupg2 | 2.2.27-2+deb11u2 |
 | htop | 3.0.5-7 |
 | iproute2 | 5.10.0-4 |
@@ -65,7 +65,7 @@ mcr.microsoft.com/devcontainers/java:dev-8-jdk-bullseye
 | libicu67 | 67.1-7 |
 | libkrb5-3 | 1.18.3-6+deb11u3 |
 | liblttng-ust0 | 2.12.1-1 |
-| libssl1.1 | 1.1.1n-0+deb11u3 |
+| libssl1.1 | 1.1.1n-0+deb11u4 |
 | libstdc++6 | 10.2.1-6 |
 | locales | 2.31-13+deb11u5 |
 | lsb-release | 11.1.0 |
@@ -81,7 +81,7 @@ mcr.microsoft.com/devcontainers/java:dev-8-jdk-bullseye
 | psmisc | 23.4-2 |
 | rsync | 3.2.3-4+deb11u1 |
 | strace | 5.10-1 |
-| sudo | 1.9.5p2-3 |
+| sudo | 1.9.5p2-3+deb11u1 |
 | unzip | 6.0-26+deb11u1 |
 | vim-tiny | 2:8.2.2434-3+deb11u1 |
 | wget | 1.21-1+deb11u1 |
@@ -92,7 +92,7 @@ mcr.microsoft.com/devcontainers/java:dev-8-jdk-bullseye
 
 ## Variant: buster
 
-**Digest:** sha256:fe261877a05963e0aa1bff76ddebf848459704ab5e69866e6a6c5a40c4870601
+**Digest:** sha256:14dc7b7efbb0c2175a745ff145b48349a7300ab7c44a7ff1cd8ec53a1e08c1e6
 
 **Tags:**
 ```
@@ -113,20 +113,20 @@ mcr.microsoft.com/devcontainers/java:dev-8-jdk-buster
 
 | Language / runtime | Version | Path |
 |--------------------|---------|------|
-| [Java](https://adoptopenjdk.net/) | 1.8.0_352<br />bash: /usr/local/openjdk-*/bin/java: No such file or directory | /usr/local/sdkman/candidates/java/current<br />/usr/local |
+| [Java](https://adoptopenjdk.net/) | 1.8.0_372<br />bash: /usr/local/openjdk-*/bin/java: No such file or directory | /usr/local/sdkman/candidates/java/current<br />/usr/local |
 
 **Tools installed using git**
 
 | Tool | Commit | Path |
 |------|--------|------|
-| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 2bc42d223cfe3e21aef06648fb971bd9fb00828e | /home/vscode/.oh-my-zsh |
+| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 5d3e86e2a48adf7a308773f8f1b725d187c7c5ef | /home/vscode/.oh-my-zsh |
 | [nvm](https://github.com/nvm-sh/nvm.git) | 0ccd099bff8e384043883c4ae01b589794b13d72 | /usr/local/share/nvm |
 
 **Other tools and utilities**
 
 | Tool | Version | Path |
 |------|---------|------|
-| [SDKMAN!](https://github.com/sdkman/sdkman-cli) | 5.16.0 | /usr/local/sdkman |
+| [git](https://github.com/git/git) | 2.40.1 | 
 
 **Additional linux tools and packages**
 
@@ -135,9 +135,9 @@ mcr.microsoft.com/devcontainers/java:dev-8-jdk-buster
 | apt-transport-https | 1.8.2.3 |
 | apt-utils | 1.8.2.3 |
 | ca-certificates | 20200601~deb10u2 |
-| curl | 7.64.0-4+deb10u3 |
+| curl | 7.64.0-4+deb10u6 |
 | dialog | 1.3-20190211-1 |
-| git | 1:2.20.1-2+deb10u6 |
+| git | 1:2.20.1-2+deb10u8 |
 | gnupg2 | 2.2.12-1+deb10u2 |
 | htop | 2.2.0-1+b1 |
 | iproute2 | 4.20.0-2+deb10u1 |
@@ -149,7 +149,7 @@ mcr.microsoft.com/devcontainers/java:dev-8-jdk-buster
 | libicu63 | 63.1-6+deb10u3 |
 | libkrb5-3 | 1.17-3+deb10u5 |
 | liblttng-ust0 | 2.10.3-1 |
-| libssl1.1 | 1.1.1n-0+deb10u3 |
+| libssl1.1 | 1.1.1n-0+deb10u4 |
 | libstdc++6 | 8.3.0-6 |
 | locales | 2.28-10+deb10u2 |
 | lsb-release | 10.2019051400 |
@@ -165,7 +165,7 @@ mcr.microsoft.com/devcontainers/java:dev-8-jdk-buster
 | psmisc | 23.2-1+deb10u1 |
 | rsync | 3.1.3-6 |
 | strace | 4.26-0.2 |
-| sudo | 1.8.27-1+deb10u4 |
+| sudo | 1.8.27-1+deb10u5 |
 | unzip | 6.0-23+deb10u3 |
 | vim-tiny | 2:8.1.0875-5+deb10u4 |
 | wget | 1.20.1-1.1 |

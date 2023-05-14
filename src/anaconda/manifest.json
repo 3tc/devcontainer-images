@@ -1,5 +1,5 @@
 {
-	"version": "0.202.17",
+	"version": "0.202.25",
 	"build": {
 		"latest": true,
 		"rootDistro": "debian",
@@ -29,9 +29,17 @@
 			"cryptography",
 			"mistune",
 			"numpy",
-			"certifi"
+			"certifi",
+			"setuptools",
+			"future",
+			"wheel",
+			"nbconvert",
+			"py",
+			"pyOpenssl",
+			"werkzeug"
 		],
 		"other": {
+			"git": {},
 			"conda": {
 				"cgIgnore": true,
 				"path": "/opt/conda"

@@ -10,12 +10,11 @@
 
 ## Variant: buster
 
-**Digest:** sha256:8f5843c33ca33960e3b08b9075df48fbd5f5c574533f1387dfb4c9b46cc746d8
+**Digest:** sha256:2dafbd9b1e1ae2cf64394f1c5a9e786d454fbfd31875d259b76d1f3b5761f29f
 
 **Tags:**
 ```
 mcr.microsoft.com/devcontainers/rust:dev-buster
-mcr.microsoft.com/devcontainers/rust:dev-1
 mcr.microsoft.com/devcontainers/rust:dev-1-buster
 ```
 > *To keep up to date, we recommend using partial version numbers. Use the major version number to get all non-breaking changes (e.g. `0-`) or major and minor to only get fixes (e.g. `0.200-`).*
@@ -31,22 +30,28 @@ mcr.microsoft.com/devcontainers/rust:dev-1-buster
 
 | Language / runtime | Version | Path |
 |--------------------|---------|------|
-| [Rust](https://github.com/rust-lang/rust) | 1.66.0 | /usr/local/cargo<br />/usr/local/rustup |
+| [Rust](https://github.com/rust-lang/rust) | 1.69.0 | /usr/local/cargo<br />/usr/local/rustup |
 
 **Tools installed using git**
 
 | Tool | Commit | Path |
 |------|--------|------|
-| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 4181e8a2cc936bc7b7a89d674bf261023159ed35 | /home/vscode/.oh-my-zsh |
+| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 5d3e86e2a48adf7a308773f8f1b725d187c7c5ef | /home/vscode/.oh-my-zsh |
 
 **Cargo / rustup (Rust) crates and tools**
 
 | Tool / crate | Version |
 |--------------|---------|
-| rustfmt | 1.5.1 |
-| rust-analysis | 1.66.0 |
-| rust-src | 1.66.0 |
-| clippy | 1.66.0 |
+| rustfmt | 1.5.2 |
+| rust-analysis | 1.69.0 |
+| rust-src | 1.69.0 |
+| clippy | 1.69.0 |
+
+**Other tools and utilities**
+
+| Tool | Version | Path |
+|------|---------|------|
+| [git](https://github.com/git/git) | 2.40.1 | 
 
 **Additional linux tools and packages**
 
@@ -55,10 +60,10 @@ mcr.microsoft.com/devcontainers/rust:dev-1-buster
 | apt-transport-https | 1.8.2.3 |
 | apt-utils | 1.8.2.3 |
 | ca-certificates | 20200601~deb10u2 |
-| curl | 7.64.0-4+deb10u3 |
+| curl | 7.64.0-4+deb10u6 |
 | dialog | 1.3-20190211-1 |
 | gcc | 4:8.3.0-1 |
-| git | 1:2.20.1-2+deb10u6 |
+| git | 1:2.20.1-2+deb10u8 |
 | gnupg2 | 2.2.12-1+deb10u2 |
 | htop | 2.2.0-1+b1 |
 | iproute2 | 4.20.0-2+deb10u1 |
@@ -71,7 +76,7 @@ mcr.microsoft.com/devcontainers/rust:dev-1-buster
 | libicu63 | 63.1-6+deb10u3 |
 | libkrb5-3 | 1.17-3+deb10u5 |
 | liblttng-ust0 | 2.10.3-1 |
-| libssl1.1 | 1.1.1n-0+deb10u3 |
+| libssl1.1 | 1.1.1n-0+deb10u4 |
 | libstdc++6 | 8.3.0-6 |
 | lldb | 1:7.0-47 |
 | locales | 2.28-10+deb10u2 |
@@ -89,7 +94,7 @@ mcr.microsoft.com/devcontainers/rust:dev-1-buster
 | python3-minimal | 3.7.3-1 |
 | rsync | 3.1.3-6 |
 | strace | 4.26-0.2 |
-| sudo | 1.8.27-1+deb10u4 |
+| sudo | 1.8.27-1+deb10u5 |
 | unzip | 6.0-23+deb10u3 |
 | vim-tiny | 2:8.1.0875-5+deb10u4 |
 | wget | 1.20.1-1.1 |
@@ -99,11 +104,12 @@ mcr.microsoft.com/devcontainers/rust:dev-1-buster
 
 ## Variant: bullseye
 
-**Digest:** sha256:ef4cac76c1162042427cd8038cd983158697ebef717fafcb4220ccbdda0db84f
+**Digest:** sha256:673f3656264076216bc0c10ca72110ad9132775be73df29e3a0b90c25ed759d9
 
 **Tags:**
 ```
 mcr.microsoft.com/devcontainers/rust:dev-bullseye
+mcr.microsoft.com/devcontainers/rust:dev-1
 mcr.microsoft.com/devcontainers/rust:dev-1-bullseye
 ```
 > *To keep up to date, we recommend using partial version numbers. Use the major version number to get all non-breaking changes (e.g. `0-`) or major and minor to only get fixes (e.g. `0.200-`).*
@@ -119,22 +125,28 @@ mcr.microsoft.com/devcontainers/rust:dev-1-bullseye
 
 | Language / runtime | Version | Path |
 |--------------------|---------|------|
-| [Rust](https://github.com/rust-lang/rust) | 1.66.0 | /usr/local/cargo<br />/usr/local/rustup |
+| [Rust](https://github.com/rust-lang/rust) | 1.69.0 | /usr/local/cargo<br />/usr/local/rustup |
 
 **Tools installed using git**
 
 | Tool | Commit | Path |
 |------|--------|------|
-| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 4181e8a2cc936bc7b7a89d674bf261023159ed35 | /home/vscode/.oh-my-zsh |
+| [Oh My Zsh!](https://github.com/ohmyzsh/ohmyzsh) | 5d3e86e2a48adf7a308773f8f1b725d187c7c5ef | /home/vscode/.oh-my-zsh |
 
 **Cargo / rustup (Rust) crates and tools**
 
 | Tool / crate | Version |
 |--------------|---------|
-| rustfmt | 1.5.1 |
-| rust-analysis | 1.66.0 |
-| rust-src | 1.66.0 |
-| clippy | 1.66.0 |
+| rustfmt | 1.5.2 |
+| rust-analysis | 1.69.0 |
+| rust-src | 1.69.0 |
+| clippy | 1.69.0 |
+
+**Other tools and utilities**
+
+| Tool | Version | Path |
+|------|---------|------|
+| [git](https://github.com/git/git) | 2.40.1 | 
 
 **Additional linux tools and packages**
 
@@ -143,10 +155,10 @@ mcr.microsoft.com/devcontainers/rust:dev-1-bullseye
 | apt-transport-https | 2.2.4 |
 | apt-utils | 2.2.4 |
 | ca-certificates | 20210119 |
-| curl | 7.74.0-1.3+deb11u3 |
+| curl | 7.74.0-1.3+deb11u7 |
 | dialog | 1.3-20201126-1 |
 | gcc | 4:10.2.1-1 |
-| git | 1:2.30.2-1 |
+| git | 1:2.30.2-1+deb11u2 |
 | gnupg2 | 2.2.27-2+deb11u2 |
 | htop | 3.0.5-7 |
 | iproute2 | 5.10.0-4 |
@@ -158,7 +170,7 @@ mcr.microsoft.com/devcontainers/rust:dev-1-bullseye
 | libicu67 | 67.1-7 |
 | libkrb5-3 | 1.18.3-6+deb11u3 |
 | liblttng-ust0 | 2.12.1-1 |
-| libssl1.1 | 1.1.1n-0+deb11u3 |
+| libssl1.1 | 1.1.1n-0+deb11u4 |
 | libstdc++6 | 10.2.1-6 |
 | lldb | 1:11.0-51+nmu5 |
 | locales | 2.31-13+deb11u5 |
@@ -176,7 +188,7 @@ mcr.microsoft.com/devcontainers/rust:dev-1-bullseye
 | python3-minimal | 3.9.2-3 |
 | rsync | 3.2.3-4+deb11u1 |
 | strace | 5.10-1 |
-| sudo | 1.9.5p2-3 |
+| sudo | 1.9.5p2-3+deb11u1 |
 | unzip | 6.0-26+deb11u1 |
 | vim-tiny | 2:8.2.2434-3+deb11u1 |
 | wget | 1.21-1+deb11u1 |

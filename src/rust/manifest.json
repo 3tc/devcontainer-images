@@ -1,5 +1,5 @@
 {
-	"version": "0.203.3",
+	"version": "0.203.11",
 	"variants": [
 		"buster",
 		"bullseye"
@@ -21,10 +21,10 @@
 		],
 		"variantTags": {
 			"buster": [
-				"rust:${VERSION}-1",
 				"rust:${VERSION}-1-buster"
 			],
 			"bullseye": [
+				"rust:${VERSION}-1",
 				"rust:${VERSION}-1-bullseye"
 			]
 		}
@@ -51,6 +51,9 @@
 			"Rust": {
 				"cgIgnore": true
 			}
+		},
+		"other": {
+			"git": {}
 		}
 	}
 }

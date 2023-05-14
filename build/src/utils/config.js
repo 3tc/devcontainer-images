@@ -564,15 +564,15 @@ function getParentTagForVersion(definitionId, version, registry, registryPath, v
     
         // Determine right parent variant to use (assuming there are variants)
         const parentVariantList = getVariants(parentId);
-        let parentVariant;
+        let parentVariantId;
         if(parentVariantList) {
             // If a variant is specified in the parentVariant property in build, use it - otherwise default to the child image's variant
-            parentVariant = config.definitionBuildSettings[definitionId].parentVariant || variant;
+            let parentVariant = config.definitionBuildSettings[definitionId].parentVariant || variant;
             if(typeof parentVariant !== 'string') {
                 // Use variant to figure out correct variant it not the same across all parents, or return first variant if child has no variant
                 parentVariant = variant ? parentVariant[variant] : parentVariant[Object.keys(parentId)[0]];
             }
-            const parentVariantId = config.definitionBuildSettings[definitionId].idMismatch === "true" && variant.includes('-') ? variant.split('-')[1] : variant;
+            parentVariantId = config.definitionBuildSettings[definitionId].idMismatch === "true" && variant.includes('-') ? variant.split('-')[1] : variant;
             if(!parentVariantList.includes(parentVariantId)) {
                 throw `Unable to determine variant for parent. Variant ${parentVariantId} is not in ${parentId} list: ${parentVariantList}`;
             }
@@ -580,7 +580,7 @@ function getParentTagForVersion(definitionId, version, registry, registryPath, v
         
         // Parent image version may be different than child's
         const parentVersion = getVersionFromRelease(version, parentId);
-        return getTagsForVersion(parentId, parentVersion, registry, registryPath, parentVariant)[0];
+        return getTagsForVersion(parentId, parentVersion, registry, registryPath, parentVariantId)[0];
     }
     return null;
 }
@@ -671,18 +671,16 @@ function getFallbackPoolUrl(package) {
 
 
 async function getStagingFolder(release) {
-    if (!stagingFolders[release]) {
-        const stagingFolder = path.join(os.tmpdir(), 'dev-containers', release);
-        console.log(`(*) Copying files to ${stagingFolder}\n`);
-        await asyncUtils.rimraf(stagingFolder); // Clean out folder if it exists
-        await asyncUtils.mkdirp(stagingFolder); // Create the folder
-        await asyncUtils.copyFiles(
-            path.resolve(__dirname, '..', '..', '..'),
-            getConfig('filesToStage'),
-            stagingFolder);
-        
-        stagingFolders[release] = stagingFolder;
-    }
+    const stagingFolder = path.join(os.tmpdir(), 'dev-containers', release);
+    console.log(`(*) Copying files to ${stagingFolder}\n`);
+    await asyncUtils.rimraf(stagingFolder); // Clean out folder if it exists
+    await asyncUtils.mkdirp(stagingFolder); // Create the folder
+    await asyncUtils.copyFiles(
+        path.resolve(__dirname, '..', '..', '..'),
+        getConfig('filesToStage'),
+        stagingFolder);
+    
+    stagingFolders[release] = stagingFolder;
     return stagingFolders[release];
 }
 

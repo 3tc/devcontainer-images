@@ -1,5 +1,5 @@
 {
-	"version": "0.206.2",
+	"version": "0.206.8",
 	"variants": [
 		"bullseye",
 		"buster",
@@ -101,6 +101,9 @@
 			"Clang": {
 				"cgIgnore": true
 			}
+		},
+		"other": {
+			"git": {}
 		}
 	}
 }

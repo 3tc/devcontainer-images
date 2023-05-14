@@ -1,5 +1,5 @@
 {
-	"version": "0.204.3",
+	"version": "0.204.9",
 	"variants": [
 		"7.0-bullseye-slim",
 		"7.0-jammy",
@@ -65,6 +65,9 @@
 				"path": "/usr",
 				"downloadUrl": "https://dotnet.microsoft.com/"
 			}
+		},
+		"other": {
+			"git": {}
 		}
 	}
 }

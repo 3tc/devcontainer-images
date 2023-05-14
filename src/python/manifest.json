@@ -1,5 +1,5 @@
 {
-	"version": "0.204.3",
+	"version": "0.204.10",
 	"variants": [
 		"3.11-bullseye",
 		"3.10-bullseye",
@@ -106,11 +106,17 @@
 			"virtualenv",
 			"pipx"
 		],
+		"pip": [
+			"setuptools"
+		],
 		"languages": {
 			"Python": {
 				"cgIgnore": true,
 				"path": "/usr/local"
 			}
+		},
+		"other": {
+			"git": {}
 		}
 	}
 }

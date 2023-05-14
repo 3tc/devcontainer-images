@@ -26,7 +26,6 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get install -y --no-install-recommends \
         bzip2 \
         ca-certificates \
-        git \
         libglib2.0-0 \
         libsm6 \
         libxcomposite1 \
@@ -66,7 +65,19 @@ RUN python3 -m pip install \
     # https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-34141
     numpy \
     # https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23491
-    certifi
+    certifi \
+    # https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-40897
+    setuptools \
+    # https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-40899
+    future \
+    # https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-40898
+    wheel \
+    # https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-32862
+    nbconvert \
+    # https://github.com/devcontainers/images/issues/486
+    pyOpenssl \
+    # https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-25577
+    werkzeug
 
 # Copy environment.yml (if found) to a temp location so we can update the environment. Also
 # copy "noop.txt" so the COPY instruction does not fail if no environment.yml exists.

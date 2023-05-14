@@ -1,5 +1,5 @@
 {
-	"version": "2.1.5",
+	"version": "2.3.1",
 	"build": {
 		"latest": true,
 		"rootDistro": "debian",
@@ -118,12 +118,12 @@
 			"requests",
 			"plotly",
 			"jupyterlab-git",
-			"certifi"
+			"certifi",
+			"setuptools",
+			"wheel"
 		],
 		"other": {
-			"git": {
-				"path": "/usr/bin"
-			},
+			"git": {},
 			"Xdebug": {
 				"path": "/usr/local/php/current"
 			},
